@@ -1,0 +1,65 @@
+<% layout("/layouts/boilerplate")%>
+
+        <body>
+                <div class="row">
+                        <div class="col-8 offset-2 mt-3">
+                                <h1>Edit Content</h1>
+                                <form action="/listings/<%= list._id %>?_method=PATCH" method="POST" novalidate
+                                        class="needs-validation" enctype="multipart/form-data">
+                                        <div class="mb-3"><label for="title" class="form-label">Title</label><input
+                                                        type="text" name="title" value="<%= list.title %>"
+                                                        class="form-control" required>
+                                                <div class="invalid-feedback">
+                                                        Please add valid title!
+                                                </div>
+                                        </div>
+                                        <div class="mb-3">
+                                                Original Listing Image <br>
+                                                <img src="<%= originalImageUrl %>" alt="">
+                                        </div>
+                                        <div class="mb-3"><label for="image" class="form-label">Upload Image
+                                                        Link</label><input type="file" name="image" value=""
+                                                        class="form-control">
+
+                                        </div>
+                                        <div class="mb-3"><label for="image" class="form-label">Upload Image
+                                                        Link</label><input type="file" name="image" value=""
+                                                        class="form-control">
+                                                <div class="invalid-feedback">
+                                                        Please add valid image link!
+                                                </div>
+
+                                        </div>
+                                        <div class="mb-3"><label for="price" class="form-label">Price</label><input
+                                                        type="text" name="price" value="<%= list.price %>"
+                                                        class="form-control" required>
+                                                <div class="invalid-feedback">
+                                                        Please add valid price!
+                                                </div>
+                                        </div>
+                                        <div class="row">
+                                                <div class="mb-3 col-md-4"><label for="location"
+                                                                class="form-label">Location</label><input type="text"
+                                                                name="location" value="<%= list.location %>"
+                                                                class="form-control" required>
+                                                        <div class="invalid-feedback">
+                                                                Please add valid location!
+                                                        </div>
+                                                </div>
+                                                <div class="mb-3 col-md-8"><label for="country"
+                                                                class="form-label">Country</label><input type="text"
+                                                                name="country" value="<%= list.country %>"
+                                                                class="form-control" required>
+                                                        <div class="invalid-feedback">
+                                                                Please add valid country!
+                                                        </div>
+                                                </div>
+                                        </div>
+
+
+                                        <button type="submit" class="btn btn-dark edit-btn">Update</button>
+                                </form>
+                        </div>
+                </div>
+
+        </body>
