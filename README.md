@@ -21,7 +21,7 @@ Wanderlust is an intuitive and powerful online room booking platform built with 
 
 🌐 Live Demo
 
-Check out the live version of Wanderlust here: Live Site
+Check out the live version of Wanderlust here: Live Site(https://wanderlust-1-c2s0.onrender.com/listings)
 
 📜 License
 
