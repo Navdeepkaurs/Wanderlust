@@ -19,45 +19,6 @@ Wanderlust is an intuitive and powerful online room booking platform built with 
 	3.	Manage Bookings: After logging in, users can manage and view their bookings.
 	4.	Admin Panel: Admins can add, update, or delete rooms and manage user bookings.
 
-🧑‍💻 Getting Started
-
-To get started with Wanderlust on your local machine, follow these steps:
-
-Prerequisites
-	•	Node.js and npm installed.
-	•	MongoDB set up locally or using a cloud service like MongoDB Atlas.
-
-Installation
-	1.	Clone the repository:
-
-git clone https://github.com/Navdeepkaurs/Wanderlust.git
-
-
-	2.	Install frontend dependencies:
-
-cd wanderlust/frontend
-npm install
-
-
-	3.	Install backend dependencies:
-
-cd ../backend
-npm install
-
-
-	4.	Create a .env file in the backend directory and add your MongoDB connection string and any other required environment variables.
-	5.	Run the application:
-
-# Start the backend server
-npm start
-
-# In a new terminal, start the frontend development server
-npm start
-
-
-
-Navigate to http://localhost:3000 to view the application in your browser!
-
 🌐 Live Demo
 
 Check out the live version of Wanderlust here: Live Site
